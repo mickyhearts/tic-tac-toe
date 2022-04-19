@@ -1,0 +1,304 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static final String TEXT_RESET = "\u001B[0m";
+    public static final String TEXT_BLACK = "\u001B[30m";
+    public static final String TEXT_RED = "\u001B[31m";
+    public static final String TEXT_GREEN = "\u001B[32m";
+    public static final String TEXT_YELLOW = "\u001B[33m";
+    public static final String TEXT_BLUE = "\u001B[34m";
+    public static final String TEXT_PURPLE = "\u001B[35m";
+    public static final String TEXT_CYAN = "\u001B[36m";
+    public static final String TEXT_WHITE = "\u001B[37m";
+
+    public static void main(String[] args) {
+        // write your code here
+
+        String[][] tictactoe = new String[3][3];
+
+        tictactoe[0][0] = TEXT_BLACK+"1"+TEXT_RESET;
+        tictactoe[0][1] = TEXT_BLACK+"2"+TEXT_RESET;
+        tictactoe[0][2] = TEXT_BLACK+"3"+TEXT_RESET;
+        tictactoe[1][0] = TEXT_BLACK+"4"+TEXT_RESET;
+        tictactoe[1][1] = TEXT_BLACK+"5"+TEXT_RESET;
+        tictactoe[1][2] = TEXT_BLACK+"6"+TEXT_RESET;
+        tictactoe[2][0] = TEXT_BLACK+"7"+TEXT_RESET;
+        tictactoe[2][1] = TEXT_BLACK+"8"+TEXT_RESET;
+        tictactoe[2][2] = TEXT_BLACK+"9"+TEXT_RESET;
+
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) {
+                System.out.print(strings[j] + " ");
+
+
+            }
+        }
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'X':");
+
+        int number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");
+
+        }
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'O':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");}
+
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'X':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");
+
+            }
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'O':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");}
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'X':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");
+
+        }
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'O':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");}
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'X':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");
+
+        }
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'O':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"O"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"O"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");}
+        scanner = new Scanner(System.in);
+
+        System.out.println("\n \nEnter what number you would like to replace with an 'X':");
+
+        number = scanner.nextInt();
+
+        if (number == 1){
+            tictactoe[0][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 2){
+            tictactoe[0][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 3){
+            tictactoe[0][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 4){
+            tictactoe[1][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 5){
+            tictactoe[1][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 6){
+            tictactoe[1][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 7){
+            tictactoe[2][0] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 8){
+            tictactoe[2][1] = TEXT_BLUE+"X"+TEXT_RESET;}
+        else if (number == 9){
+            tictactoe[2][2] = TEXT_BLUE+"X"+TEXT_RESET;}
+        for (String[] strings : tictactoe) {
+            System.out.println();
+
+            for (int j = 0; j < strings.length; j++) System.out.print(strings[j] + " ");
+
+        }
+        } }
